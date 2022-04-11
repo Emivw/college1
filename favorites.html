@@ -1,216 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Project collab</title>
-    <meta name="description" content="Group project">
-    <!-- Playfair Display - Raleway Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900%7CRaleway:100,300,400,600,700" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/dark-theme.css">
-<style>
-h1 {
-      text-shadow: 0 0 3px gray, 0 0 5px gray; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: xx-large;}
-h2 {
-    font-size: medium; font-family: Arial, Helvetica, sans-serif; text-align: center;
-    } 
-h3 {
-    text-align: center; text-decoration: underline;
-}
-h4 {
-    text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: large; text-align: center;}
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-html {
-  box-sizing: border-box;
-}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Project collab</title>
+  <meta name="description" content="Group project">
+  <!-- Playfair Display - Raleway Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900%7CRaleway:100,300,400,600,700"
+    rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/dark-theme.css">
+  <style>
+    h1 {
+      text-shadow: 0 0 3px gray, 0 0 5px gray;
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: xx-large;
+    }
 
-.row {align-items: center;
-    margin-left: auto;
-  margin-right: auto;}
+    h2 {
+      color: #555;
+      font-size: medium;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+    }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+    h3 {
+      text-align: center;
+    }
 
-.column {
-  align-content: center;
-  width: 20%;
-  margin-bottom: 10px;
-  padding: 0 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.center {
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;}
+    h4 {
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
+    p {
+      color: #000;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: large;
+      text-align: center;
+    }
 
-.card {
-  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
-  margin-left: auto;
-  margin-right: auto;
-}
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.container {
-  padding: 8 50px; 
-  margin-left: auto;
-  margin-right: auto;
-}
+    html {
+      box-sizing: border-box;
+    }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+    .row {
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1%;
+    }
 
-.title {
-  color: black;
-}
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 30%;
-}
+    .center {
+      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.button:hover {
-  background-color: #555;
-}
-</style>
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .card {
+      box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1%;
+    }
+
+    .container {
+      padding: 8 50px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1%;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: black;
+    }
+
+    .button {
+      outline: auto;
+      display: inline-block;
+      padding: 10px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+      transition-duration: 1.5s;
+    }
+  </style>
 </head>
 
 <body>
-    <header class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">MCSEM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar i1"></span>
-          <span class="icon-bar i2"></span>
-          <span class="icon-bar i3"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarDefault">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="favorites.html">Favorite music <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="madeby.html">MADE BY</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT US</a>
-            </li>
-          </ul>
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">MCSEM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar i1"></span>
+        <span class="icon-bar i2"></span>
+        <span class="icon-bar i3"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favorites.html">Favorite music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="madeby.html">MADE BY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>MCSEM'S FAVORITES</h1>
+    <h3>Our groups favorite musical artist, album and song.</h3>
+    <br>
+
+    <div class="row">
+      <div class="card">
+        <img src="Sweetener.jpg" alt="Sweetener">
+        <div class="container">
+          <h2>Cassidy Manuel</h2>
+          <p class="title">ARIANA GRANDE</p>
+          <p>Sweetener</p>
+          <p>Goodnight N Go</p>
+          <a href="https://youtu.be/sXJ2hajo6rw" target="_blank"><button class="button">Listen</button></a>
         </div>
-      </nav>
-
-<h1>MCSEM's Favorites</h1>
-<h3>Our groups favorite musical artist, album and song.</h3>
-<h4 class="glow"> Click on the image to go to the song!</h4>
-<br>
-
-<div class="container">
-  <div class="row">
-    <div class="card">
-      <a href="https://youtu.be/sXJ2hajo6rw"target="_blank">
-          <img src="Sweetener.jpg" alt="Sweetener"> </a> 
-      <div class="container">
-        <h2>Cassidy Manuel</h2>
-        <p class="title">ARIANA GRANDE</p>
-        <p>Sweetener</p>
-        <p>Goodnight N Go</p>
       </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="card">
-      <a href="https://youtu.be/bSfpSOBD30U" target="_blank">
-          <img src="geazy.jpg" alt="whenitsdarkout" ></a>
-      <div class="container">
-        <h2>Marshalino Jankowski</h2>
-        <p class="title">G-EAZY</p>
-        <p>When Its Dark Out</p>
-        <p>Me, Myself & i</p>
+    <div class="row">
+      <div class="card">
+        <img src="geazy.jpg" alt="whenitsdarkout">
+        <div class="container">
+          <h2>Marshalino Jankowski</h2>
+          <p class="title">G-EAZY</p>
+          <p>When Its Dark Out</p>
+          <p>Me, Myself & i</p>
+          <a href="https://youtu.be/bSfpSOBD30U" target="_blank"><button class="button">Listen</button></a>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="row">
-    <div class="card">
-      <a href="https://youtu.be/LZJy-QN45Rw" target="_blank">
-          <img src="badvibes.jpg" alt="XXXTENTACION" ></a>
-      <div class="container">
-        <h2>Emile Van Wyk</h2>
-        <p class="title">XXXTENTACION</p>
-        <p>Bad Vibes Forever.</p>
-        <p>Its All Fading To Black</p>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="row">
-    <div class="card">
-      <a href="https://youtu.be/FAucVNRx_mU" target="_blank">
-          <img src="seventeen.jpg" alt="seventeen" ></a>
-      <div class="container">
-        <h2>Shane Stevens</h2>
-        <p class="title">XXXTENTACION</p>
-        <p>17</p>
-        <p>Jocelyn Flores</p>
+    <div class="row">
+      <div class="card">>
+        <img src="badvibes.jpg" alt="XXXTENTACION">
+        <div class="container">
+          <h2>Emile Van Wyk</h2>
+          <p class="title">XXXTENTACION</p>
+          <p>Bad Vibes Forever.</p>
+          <p>Its All Fading To Black</p>
+          <a href="https://youtu.be/LZJy-QN45Rw" target="_blank"><button class="button">Listen</button></a>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+    </div>
 
-<div class="row">
-    <div class="card">
-      <a href="https://youtu.be/dI3xkL7qUAc" target="_blank">
-          <img src="planet.jpg" alt="planet her" ></a>
-      <div class="container">
-        <h2>Monique Dampies</h2>
-        <p class="title">DOJA CAT</p>
-        <p>Planet Her</p>
-        <p>Need To Know</p>
+    <div class="row">
+      <div class="card">
+        <img src="seventeen.jpg" alt="seventeen">
+        <div class="container">
+          <h2>Shane Stevens</h2>
+          <p class="title">XXXTENTACION</p>
+          <p>17</p>
+          <p>Jocelyn Flores</p>
+          <a href="https://youtu.be/FAucVNRx_mU" target="_blank"><button class="button">Listen</button></a>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <img src="planet.jpg" alt="planet her">
+        <div class="container">
+          <h2>Monique Dampies</h2>
+          <p class="title">DOJA CAT</p>
+          <p>Planet Her</p>
+          <p>Need To Know</p>
+          <a href="https://youtu.be/dI3xkL7qUAc" target="_blank"><button class="button">Listen</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
 
 </body>
+
 </html>
